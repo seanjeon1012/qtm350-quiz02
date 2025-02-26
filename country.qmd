@@ -1,11 +1,24 @@
 ---
-title: "Life Expectancy and GDP per Capita"
+title: "Country Analysis"
+format: html
 ---
 
-# Life Expectancy vs. GDP per Capita
+# Country Analysis
 
-This page analyzes the relationship between life expectancy and GDP per capita.
+This page analyzes changes in life expectancy, GDP per capita, and population over time.
 
-```{r}
-# Sample R code (or Python, depending on your setup)
-plot(1:10, (1:10)^2, type='b', col='blue', main="Example Graph")
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+years = np.arange(1960, 2020, 1)
+life_expectancy = 50 + 0.5 * (years - 1960) + np.random.normal(0, 1, len(years))
+
+plt.figure(figsize=(8, 5))
+plt.plot(years, life_expectancy, color='red', linestyle='-', marker='o', alpha=0.6)
+plt.xlabel("Year")
+plt.ylabel("Life Expectancy (Years)")
+plt.title("Life Expectancy Over Time")
+plt.grid(True)
+plt.show()
+```
