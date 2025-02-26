@@ -1,0 +1,25 @@
+---
+title: "Life Expectancy and Population"
+format: html
+---
+
+# Life Expectancy vs. Population
+
+This page explores the correlation between life expectancy and population.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Simulated data
+population = np.logspace(5, 9, 100)
+life_expectancy = 50 + 10 * np.log10(population / 1e5)
+
+plt.figure(figsize=(8, 5))
+plt.scatter(population, life_expectancy, color='green', alpha=0.6)
+plt.xscale("log")
+plt.xlabel("Population (Log Scale)")
+plt.ylabel("Life Expectancy (Years)")
+plt.title("Life Expectancy vs. Population")
+plt.grid(True)
+plt.show()

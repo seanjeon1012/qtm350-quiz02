@@ -1,0 +1,11 @@
+---
+title: "Life Expectancy and GDP per Capita"
+---
+
+# Life Expectancy vs. GDP per Capita
+
+This page analyzes the relationship between life expectancy and GDP per capita.
+
+```{r}
+# Sample R code (or Python, depending on your setup)
+plot(1:10, (1:10)^2, type='b', col='blue', main="Example Graph")

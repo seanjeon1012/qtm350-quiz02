@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs  # Ensures output goes to the docs folder
+
+website:
+  title: "My Quarto Site"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: life-gdp.qmd
+        text: Life Expectancy and GDP per Capita
+      - href: life-population.qmd
+        text: Life Expectancy and Population
+      - href: country.qmd
+        text: Country Analysis
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo  # Change the theme here
+    toc: true
