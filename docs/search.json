@@ -18,7 +18,7 @@
     "href": "life-gdp.html",
     "title": "Life Expectancy and GDP per Capita",
     "section": "",
-    "text": "Life Expectancy vs. GDP per Capita\nThis page analyzes the relationship between life expectancy and GDP per capita.\n\n\nSample R code (or Python, depending on your setup)\nplot(1:10, (1:10)^2, type=‘b’, col=‘blue’, main=“Example Graph”)"
+    "text": "Life Expectancy vs. GDP per Capita\nThis page analyzes the relationship between life expectancy and GDP per capita.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Sample data\nx = np.arange(1, 11)\ny = x ** 2  # Squaring the x values\n\n# Create the plot\nplt.figure(figsize=(6, 4))\nplt.plot(x, y, marker='o', linestyle='-', color='blue', label=\"y = x²\")\nplt.xlabel(\"X Values\")\nplt.ylabel(\"Y Values (Squared)\")\nplt.title(\"Life Expectancy vs. GDP per Capita\")\nplt.legend()\nplt.grid(True)\nplt.show()"
   },
   {
     "objectID": "country.html",
@@ -46,6 +46,6 @@
     "href": "life-population.html",
     "title": "Life Expectancy and Population",
     "section": "",
-    "text": "Life Expectancy vs. Population\nThis page explores the correlation between life expectancy and population.\nimport matplotlib.pyplot as plt import numpy as np\n\n\nSimulated data\npopulation = np.logspace(5, 9, 100) life_expectancy = 50 + 10 * np.log10(population / 1e5)\nplt.figure(figsize=(8, 5)) plt.scatter(population, life_expectancy, color=‘green’, alpha=0.6) plt.xscale(“log”) plt.xlabel(“Population (Log Scale)”) plt.ylabel(“Life Expectancy (Years)”) plt.title(“Life Expectancy vs. Population”) plt.grid(True) plt.show()"
+    "text": "Life Expectancy vs. Population\nThis page explores the correlation between life expectancy and population.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Simulated data\npopulation = np.logspace(5, 9, 100)\nlife_expectancy = 50 + 10 * np.log10(population / 1e5)\n\nplt.figure(figsize=(8, 5))\nplt.scatter(population, life_expectancy, color='green', alpha=0.6)\nplt.xscale(\"log\")\nplt.xlabel(\"Population (Log Scale)\")\nplt.ylabel(\"Life Expectancy (Years)\")\nplt.title(\"Life Expectancy vs. Population\")\nplt.grid(True)\nplt.show()"
   }
 ]

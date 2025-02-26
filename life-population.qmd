@@ -23,3 +23,4 @@ plt.ylabel("Life Expectancy (Years)")
 plt.title("Life Expectancy vs. Population")
 plt.grid(True)
 plt.show()
+```
